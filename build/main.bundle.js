@@ -4,7 +4,7 @@ var keys = [['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', 'b
 
 var isShift = false;
 var isCapslock = false;
-display(isShift);
+display();
 
 function display() {
     for (var i = 0; i < keys[isShift === false ? 0 : 1].length; i++) {
@@ -43,7 +43,7 @@ function typing(code) {
         return;
     } else if (code == 'caps lock') {
         isCapslock = !isCapslock;
-        display(isShift, isCapslock);
+        display();
         if (isCapslock) {
             document.getElementById('key' + keys[0].indexOf('caps lock')).style.backgroundColor = '#FFFC57';
         } else {
@@ -53,7 +53,7 @@ function typing(code) {
     }
     if (isShift) {
         isShift = false;
-        display(isShift);
+        display();
         setShiftBtnColor();
     }
     if (code == 'backspace') {
