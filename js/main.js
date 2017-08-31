@@ -17,7 +17,7 @@ const keys = [
 
 let isShift = false;
 let isCapslock = false;
-display(isShift);
+display();
 
 function display() {
     for (let i = 0; i < keys[isShift === false ? 0 : 1].length; i++) {
@@ -56,7 +56,7 @@ function typing(code) {
         return;
     } else if (code == 'caps lock') {
         isCapslock = !isCapslock;
-        display(isShift, isCapslock);
+        display();
         if (isCapslock) {
             document.getElementById(`key${keys[0].indexOf('caps lock')}`).style.backgroundColor = '#FFFC57';
         } else {
@@ -66,7 +66,7 @@ function typing(code) {
     }
     if (isShift) {
         isShift = false;
-        display(isShift);
+        display();
         setShiftBtnColor()
     }
     if (code == 'backspace') {
