@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Francois+One');
+body {
+    background-color: #FFDE99;
+    color: #6764FF;
+    font-family: 'Francois One', sans-serif;
+    min-width: 500px;
+}
+#screen {
+    width: 90%;
+    height: 15%;
+    font-size: 3em;
+    display: block;
+    margin: auto;
+    resize: none;
+}
+.keyboard {
+    text-align: center;
+}
+.keyboard button {
+    padding: 1.3vw;
+    margin: 0.2vw;
+    background-color: #4FE8AD;
+    color: #E84F68;
+    font-size: 1em;
+}
+
+.keyboard button:hover {
+    background-color: #FFFC57;
+}
+
+.keyboard button:active {
+    background-color: #6764FF;
+}
+
+.spacebar {
+    width: 70%;
+}
+
+.sp-key {
+    width: 10%;
+}
+
+.sp-m-key {
+    width: 8%;
+}
